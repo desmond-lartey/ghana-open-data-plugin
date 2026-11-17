@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Ghana Open Data">
+  <title>Ghana Open Data</title>
+  <defs><clipPath id="c"><rect width="48" height="48" rx="10"/></clipPath></defs>
+  <!-- The Ghana flag, faint, under a blue globe with the flag's black star at its centre:
+       Ghana, and data about the whole of it. -->
+  <g clip-path="url(#c)">
+    <rect width="48" height="16" fill="#ce1126"/>
+    <rect y="16" width="48" height="16" fill="#fcd116"/>
+    <rect y="32" width="48" height="16" fill="#006b3f"/>
+    <rect width="48" height="48" fill="#fff" opacity="0.62"/>
+  </g>
+  <g fill="none" stroke="#0e47cb" stroke-width="2.4">
+    <circle cx="24" cy="24" r="15"/>
+    <ellipse cx="24" cy="24" rx="6.5" ry="15"/>
+    <path d="M9 24h30M11 16.5h26M11 31.5h26" stroke-width="1.8"/>
+  </g>
+  <path d="M24,18.6L25.47,23.1L30.2,23.1L26.37,25.9L27.83,30.4L24,27.6L20.17,30.4L21.63,25.9L17.8,23.1L22.53,23.1Z" fill="#000" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

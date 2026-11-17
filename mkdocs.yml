@@ -1,0 +1,124 @@
+# Ghana Open Data: the public documentation and community site.
+#
+# This repository (ghana-open-data-plugin) is published from the project's
+# main repository: the docs/ folder, this file and the templates are copied
+# here on every change, so edit them there. community/datasets/ belongs to
+# this repository; it holds the datasets the review team has approved.
+
+site_name: Ghana Open Data
+site_description: >-
+  Open data, statistics and maps for Ghana: how to find, map, analyse and
+  share data with the Ghana Open Data portal and its GIS workspace.
+site_author: Ghana Open Data
+site_url: https://desmond-lartey.github.io/ghana-open-data-plugin/
+
+repo_url: https://github.com/desmond-lartey/ghana-open-data-plugin
+repo_name: Community & feedback
+edit_uri: ""
+
+copyright: >-
+  Documentation © Ghana Open Data contributors, CC BY 4.0. Data remains under
+  the licence of its producer, shown on each dataset's page.
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: material/account-group
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: material/web
+      link: https://ghana-open-data.vercel.app
+      name: The portal
+    - icon: material/account-group
+      link: https://github.com/desmond-lartey/ghana-open-data-plugin
+      name: Community & feedback
+
+hooks:
+  - hooks/community.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Using the portal:
+      - using/index.md
+      - Finding data: using/finding-data.md
+      - Statistics: using/statistics.md
+      - Regions and districts: using/regions.md
+      - Data Lab (SQL): using/data-lab.md
+      - Desmond, the guide: using/desmond.md
+      - Your account: using/account.md
+  - GIS workspace:
+      - gis/index.md
+      - Ghana's data in the workspace: gis/ghana-data.md
+      - Earth Engine: gis/earth-engine.md
+      - Analysis-ready data: gis/analysis-ready.md
+  - Share data:
+      - share/index.md
+      - How to submit: share/how-to-submit.md
+      - How we review: share/review.md
+      - Describing your data: share/metadata.md
+      - Community catalogue: share/catalogue.md
+  - Data & sources:
+      - data/index.md
+      - Keeping data fresh: data/freshness.md
+      - Licences and citing: data/licences.md
+      - For developers: data/developers.md
+  - About:
+      - about/index.md
+      - Privacy: about/privacy.md
+      - FAQ: about/faq.md
+      - Changelog: about/changelog.md

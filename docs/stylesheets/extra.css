@@ -1,0 +1,37 @@
+/* Ghana Open Data: the portal's blue, with Ghana's colours as an accent. */
+:root {
+  --md-primary-fg-color: #0e47cb;
+  --md-primary-fg-color--light: #2a63e6;
+  --md-primary-fg-color--dark: #0a328e;
+  --md-accent-fg-color: #fcd116;
+  --md-accent-fg-color--transparent: rgba(252, 209, 22, .12);
+  --gh-red: #ce1126; --gh-gold: #fcd116; --gh-green: #006b3f;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0e47cb;
+  --md-accent-fg-color: #fcd116;
+  --md-default-bg-color: #11161f;
+}
+/* A thin stripe in the flag's colours under the header. */
+.md-header { box-shadow: none; }
+.md-header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 4px;
+  background: linear-gradient(90deg, var(--gh-red) 0 33.33%, var(--gh-gold) 33.33% 66.66%, var(--gh-green) 66.66% 100%); }
+.md-tabs { background: #0a3aa8; }
+.md-typeset h1 { font-weight: 800; color: var(--md-default-fg-color); letter-spacing: -.01em; }
+.md-typeset a { color: #0e47cb; }
+[data-md-color-scheme="slate"] .md-typeset a { color: #8aaffa; }
+.md-typeset .md-button { border-radius: 999px; font-weight: 700; }
+.md-typeset .md-button--primary { background: #0e47cb; border-color: #0e47cb; color: #fff; }
+.md-typeset .md-button--primary:hover { background: #0a328e; border-color: #0a328e; }
+/* Home page hero */
+.gh-hero { background: linear-gradient(160deg, #0e47cb, #0a328e); color: #fff; border-radius: 14px; padding: 2.2rem 2rem 2rem; margin: 0 0 1.6rem; position: relative; overflow: hidden; }
+.gh-hero h1 { color: #fff !important; margin: 0 0 .6rem; font-size: 2.2rem; }
+.gh-hero p { color: #e6edfb; font-size: 1.05rem; max-width: 40rem; }
+.gh-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px;
+  background: linear-gradient(90deg, var(--gh-red) 0 33.33%, var(--gh-gold) 33.33% 66.66%, var(--gh-green) 66.66% 100%); }
+.gh-hero .md-button { margin: .4rem .5rem 0 0; }
+.gh-hero .md-button:not(.md-button--primary) { color: #fff; border-color: #fff; }
+.gh-hero .md-button--primary { background: #fcd116; border-color: #fcd116; color: #1a1a1a; }
+.md-typeset img.gh-shot { border-radius: 10px; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 30px rgba(10, 30, 80, .12); }
+.md-typeset .grid.cards > ul > li { border-radius: 10px; }
+.md-typeset .grid.cards > ul > li:hover { border-color: #0e47cb; }

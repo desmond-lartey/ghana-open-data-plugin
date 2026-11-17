@@ -1,0 +1,11 @@
+name: Idea or data source
+description: Suggest a feature, an improvement, or a data source the portal should connect to
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would help you, and why. For a data source, give its address and who publishes it.
+    validations:
+      required: true

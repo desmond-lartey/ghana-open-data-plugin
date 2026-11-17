@@ -1,0 +1,19 @@
+name: Problem with data
+description: A wrong boundary, a misleading number, a broken download or link
+labels: ["data"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Which dataset or page?
+      description: Paste the address of the page on the portal.
+      placeholder: https://ghana-open-data.vercel.app/dataset?id=…
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: What you see, and what you expected. A source that shows the right value helps a lot.
+    validations:
+      required: true
