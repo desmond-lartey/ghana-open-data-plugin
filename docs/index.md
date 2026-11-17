@@ -1,20 +1,13 @@
----
-hide:
-  - navigation
-  - toc
----
+# Ghana Open Data
 
-<div class="gh-hero" markdown>
+**Open statistics, boundaries, satellite data and community datasets for Ghana, to find, map, analyse and cite.**
 
-# Ghana's data, in one place
-
-Find it, map it, analyse it and cite it. Ghana Open Data brings together open statistics, boundaries, satellite data and community datasets for students, researchers, journalists, public servants and citizens.
+Ghana Open Data is a free portal for students, researchers, journalists, public servants and citizens. Browse national and regional statistics, map Ghana's regions and districts in a GIS workspace that runs in your browser, draw satellite layers with Earth Engine, query data with SQL, and share datasets of your own with the community.
 
 [Open the portal](https://ghana-open-data.vercel.app){ .md-button .md-button--primary }
 [Get started](getting-started.md){ .md-button }
+[GIS workspace](gis/index.md){ .md-button }
 [Share your data](share/index.md){ .md-button }
-
-</div>
 
 ![The Ghana Open Data portal](assets/screenshots/portal-home.png){ .gh-shot }
 

@@ -1,37 +1,133 @@
-/* Ghana Open Data: the portal's blue, with Ghana's colours as an accent. */
+/* Ghana Open Data documentation.
+
+   A clean documentation layout: white header, navigation on the left,
+   "On this page" on the right, pill buttons. The portal's blue is the
+   accent, so the site and the portal read as one product. */
+
 :root {
-  --md-primary-fg-color: #0e47cb;
+  --gh-blue:       #0e47cb;
+  --gh-blue-dark:  #0a328e;
+  --gh-blue-soft:  #e8eefb;
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        var(--gh-blue);
   --md-primary-fg-color--light: #2a63e6;
-  --md-primary-fg-color--dark: #0a328e;
-  --md-accent-fg-color: #fcd116;
-  --md-accent-fg-color--transparent: rgba(252, 209, 22, .12);
-  --gh-red: #ce1126; --gh-gold: #fcd116; --gh-green: #006b3f;
+  --md-primary-fg-color--dark:  var(--gh-blue-dark);
+  --md-primary-bg-color:        #fff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, .7);
+}
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:              var(--gh-blue);
+  --md-accent-fg-color--transparent: rgba(14, 71, 203, .08);
+  --md-accent-bg-color:              #fff;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-fg-color:         #1b1f27;
+  --md-typeset-color:            #1b1f27;
+  --md-typeset-a-color:          var(--gh-blue);
 }
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #0e47cb;
-  --md-accent-fg-color: #fcd116;
-  --md-default-bg-color: #11161f;
+  --md-default-bg-color:         #15181e;
+  --md-default-bg-color--light:  #1c2028;
+  --md-typeset-a-color:          #8aaffa;
+  --md-footer-bg-color:          #101318;
+  --md-footer-bg-color--dark:    #0c0e12;
+  --gh-blue-soft:                rgba(138, 175, 250, .12);
 }
-/* A thin stripe in the flag's colours under the header. */
-.md-header { box-shadow: none; }
-.md-header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 4px;
-  background: linear-gradient(90deg, var(--gh-red) 0 33.33%, var(--gh-gold) 33.33% 66.66%, var(--gh-green) 66.66% 100%); }
-.md-tabs { background: #0a3aa8; }
-.md-typeset h1 { font-weight: 800; color: var(--md-default-fg-color); letter-spacing: -.01em; }
-.md-typeset a { color: #0e47cb; }
-[data-md-color-scheme="slate"] .md-typeset a { color: #8aaffa; }
-.md-typeset .md-button { border-radius: 999px; font-weight: 700; }
-.md-typeset .md-button--primary { background: #0e47cb; border-color: #0e47cb; color: #fff; }
-.md-typeset .md-button--primary:hover { background: #0a328e; border-color: #0a328e; }
-/* Home page hero */
-.gh-hero { background: linear-gradient(160deg, #0e47cb, #0a328e); color: #fff; border-radius: 14px; padding: 2.2rem 2rem 2rem; margin: 0 0 1.6rem; position: relative; overflow: hidden; }
-.gh-hero h1 { color: #fff !important; margin: 0 0 .6rem; font-size: 2.2rem; }
-.gh-hero p { color: #e6edfb; font-size: 1.05rem; max-width: 40rem; }
-.gh-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px;
-  background: linear-gradient(90deg, var(--gh-red) 0 33.33%, var(--gh-gold) 33.33% 66.66%, var(--gh-green) 66.66% 100%); }
-.gh-hero .md-button { margin: .4rem .5rem 0 0; }
-.gh-hero .md-button:not(.md-button--primary) { color: #fff; border-color: #fff; }
-.gh-hero .md-button--primary { background: #fcd116; border-color: #fcd116; color: #1a1a1a; }
-.md-typeset img.gh-shot { border-radius: 10px; border: 1px solid rgba(0,0,0,.12); box-shadow: 0 10px 30px rgba(10, 30, 80, .12); }
+
+/* Header: the page colour, a hairline underneath, dark text. */
+.md-header,
+.md-header--shadow {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-header__title { font-weight: 700; font-size: 1.05rem; }
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg { height: 1.7rem; width: 1.7rem; }
+.md-source { color: var(--md-default-fg-color); }
+
+/* Search: a soft grey rounded box with a Ctrl+K hint. */
+.md-search__form {
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: .6rem;
+}
+.md-search__form:hover { background-color: var(--md-default-fg-color--lightest); }
+.md-search__input { color: var(--md-default-fg-color); }
+.md-search__input::placeholder { color: var(--md-default-fg-color--light); }
+.md-search__icon { color: var(--md-default-fg-color--light); }
+@media screen and (min-width: 60em) {
+  .md-search__form::after {
+    content: "Ctrl+K";
+    position: absolute; right: .6rem; top: 50%; transform: translateY(-50%);
+    font-size: .62rem; padding: .1rem .35rem; border-radius: .3rem;
+    background: var(--md-default-bg-color);
+    color: var(--md-default-fg-color--light);
+    pointer-events: none;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form::after { display: none; }
+}
+
+/* Left navigation: plain items, the current page on a soft blue pill. */
+.md-nav__link { border-radius: .45rem; }
+.md-sidebar--primary .md-nav__item .md-nav__link {
+  padding: .35rem .6rem; margin-top: .15rem;
+}
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__item--active > .md-nav__link:not(.md-nav__container) {
+  background: var(--gh-blue-soft);
+  color: var(--md-typeset-a-color);
+  font-weight: 600;
+}
+/* Section rows (with a chevron) line up with plain rows. */
+.md-sidebar--primary .md-nav__link.md-nav__container { padding: 0; margin-top: .15rem; }
+.md-sidebar--primary .md-nav__link.md-nav__container > .md-nav__link { padding: .35rem .6rem; margin: 0; }
+.md-sidebar--primary label.md-nav__link { padding: .35rem .6rem; margin-top: .15rem; }
+.md-sidebar--primary .md-nav__link:hover { color: var(--md-typeset-a-color); }
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary > .md-nav__title { display: none; }
+}
+
+/* "On this page". */
+.md-sidebar--secondary .md-nav__title {
+  background: none; box-shadow: none;
+  font-size: .8rem; font-weight: 700; color: var(--md-default-fg-color);
+}
+.md-sidebar--secondary .md-nav__link { font-size: .74rem; }
+
+/* Type. */
+.md-typeset { font-size: .82rem; line-height: 1.7; }
+.md-typeset h1 { font-weight: 800; color: var(--md-default-fg-color); letter-spacing: -.015em; margin-bottom: 1rem; }
+.md-typeset h2 { font-weight: 700; letter-spacing: -.01em; }
+.md-typeset h3 { font-weight: 600; }
+
+/* Buttons: pills, the first one filled. */
+.md-typeset .md-button {
+  border-radius: 999px; font-weight: 700; padding: .55em 1.4em;
+  margin: .25rem .4rem .25rem 0;
+  border: none;
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
+}
+.md-typeset .md-button--primary { background: var(--gh-blue); color: #fff; }
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus { background: var(--gh-blue-dark); color: #fff; }
+
+/* Screenshots and cards. */
+.md-typeset img.gh-shot {
+  margin-top: 1rem; border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 10px 30px rgba(10, 30, 80, .10);
+}
 .md-typeset .grid.cards > ul > li { border-radius: 10px; }
-.md-typeset .grid.cards > ul > li:hover { border-color: #0e47cb; }
+.md-typeset .grid.cards > ul > li:hover { border-color: var(--gh-blue); box-shadow: none; }
+
+.md-typeset__table { overflow-x: auto; }

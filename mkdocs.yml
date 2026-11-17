@@ -31,24 +31,21 @@ theme:
     text: Inter
     code: JetBrains Mono
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
     - navigation.top
+    - navigation.tracking
     - navigation.footer
     - navigation.indexes
     - toc.follow
@@ -79,6 +76,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      title: On this page
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
