@@ -26,3 +26,6 @@ Earth Engine needs your own registration and Cloud project; see [Earth Engine](.
 
 **I found a mistake.**
 Please tell us on the [community page](https://github.com/desmond-lartey/ghana-open-data-plugin/issues).
+
+**Where can I ask a question?**
+At the bottom of most pages, under *Questions and comments*. Sign in with a free GitHub account to post; questions are kept in the [community discussions](https://github.com/desmond-lartey/ghana-open-data-plugin/discussions), where the team and other users can answer them.

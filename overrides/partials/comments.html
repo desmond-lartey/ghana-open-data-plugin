@@ -1,0 +1,47 @@
+{#- Questions and comments under each page, powered by giscus: they are
+    stored as GitHub Discussions in the community repository, so they can be
+    answered, threaded and marked as solved there.
+
+    Set up once (see docs/about/comments.md in the main project notes):
+    extra.giscus in mkdocs.yml needs repo_id and category_id from
+    https://giscus.app. Until both are filled in, no comment box is shown.
+    A page can turn comments off with "comments: false" in its front matter. -#}
+{% set g = config.extra.giscus or {} %}
+{% if g.repo_id and g.category_id and page.meta.comments != false %}
+<h2 id="__comments">{{ g.title or "Questions and comments" }}</h2>
+<p class="gh-comments-note">{{ g.note or "Ask a question, report a problem with this page or share how you used the data. You need a free GitHub account to post." }}</p>
+<script src="https://giscus.app/client.js"
+        data-repo="{{ g.repo }}"
+        data-repo-id="{{ g.repo_id }}"
+        data-category="{{ g.category or 'Q&A' }}"
+        data-category-id="{{ g.category_id }}"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="{{ g.lang or 'en' }}"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<script>
+  /* Follow the site's light/dark switch. */
+  (function () {
+    function theme() {
+      var scheme = document.body.getAttribute("data-md-color-scheme");
+      return scheme === "slate" ? "dark" : "light";
+    }
+    var giscus = document.querySelector("script[src*=giscus]");
+    if (giscus) giscus.setAttribute("data-theme", theme());
+    function send() {
+      var frame = document.querySelector(".giscus-frame");
+      if (frame && frame.contentWindow) {
+        frame.contentWindow.postMessage({ giscus: { setConfig: { theme: theme() } } }, "https://giscus.app");
+      }
+    }
+    new MutationObserver(send).observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+  })();
+</script>
+{% endif %}

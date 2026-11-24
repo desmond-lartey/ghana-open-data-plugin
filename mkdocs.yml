@@ -22,6 +22,7 @@ copyright: >-
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: assets/logo.svg
   favicon: assets/logo.svg
@@ -58,6 +59,14 @@ extra_css:
 
 extra:
   generator: false
+  # Questions and comments under each page (giscus, stored as GitHub
+  # Discussions in this repository). Fill in repo_id and category_id from
+  # https://giscus.app; until then no comment box is shown.
+  giscus:
+    repo: desmond-lartey/ghana-open-data-plugin
+    repo_id: "R_kgDOVxRSSQ"
+    category: "Q&A"
+    category_id: "DIC_kwDOVxRSSc4DL5oZ"
   social:
     - icon: material/web
       link: https://ghana-open-data.vercel.app

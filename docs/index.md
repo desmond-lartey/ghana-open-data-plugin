@@ -1,3 +1,7 @@
+---
+comments: false
+---
+
 # Ghana Open Data
 
 **Open statistics, boundaries, satellite data and community datasets for Ghana, to find, map, analyse and cite.**
