@@ -2,6 +2,8 @@
 
 ## November 2026
 
+- **Electoral geography**: the 276 parliamentary constituencies and 40,648 polling stations of the 2024 general elections, from the Electoral Commission's list, each linked to its district. Download them as CSV or query them in the Data Lab.
+- **Languages**: the portal's menus and buttons in Asante Twi and Ewe (drafts; English stays the default).
 - **Share data**: a Zotero-style form for sharing datasets, with DOI look-up, any file format and review by the team.
 - **Accounts**: free accounts for downloads and the analysis tools; browsing stays open.
 - **Fresher figures**: the IMF fills the years the World Bank has not published yet; Ghana's datasets on HDX are listed live.

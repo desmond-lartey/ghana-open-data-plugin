@@ -5,6 +5,7 @@ Ghana Open Data republishes open data from its original producers, with their li
 | Source | What it provides | How it reaches the portal |
 |---|---|---|
 | OCHA Common Operational Dataset | National, regional and district boundaries, capitals, p-codes | Republished as files |
+| Electoral Commission of Ghana | The 276 parliamentary constituencies and 40,648 polling stations of the 2024 elections, linked to districts by p-code | Republished as tables (CSV), and in the Data Lab |
 | World Bank, World Development Indicators | National indicators, comparison countries | Live, cached for a day |
 | IMF World Economic Outlook | Recent years and current-year estimates for economic indicators | Live, filling years the World Bank lacks |
 | NASA GIBS | Daily and multi-day satellite imagery | Live map tiles |
