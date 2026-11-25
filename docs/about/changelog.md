@@ -2,6 +2,7 @@
 
 ## November 2026
 
+- **Map explorer**: compare Ghana's 260 districts and 16 regions on a map, table or ranking: buildings, roads, places, land cover (from Overture Maps, refreshed monthly), constituencies and polling stations.
 - **Electoral geography**: the 276 parliamentary constituencies and 40,648 polling stations of the 2024 general elections, from the Electoral Commission's list, each linked to its district. Download them as CSV or query them in the Data Lab.
 - **Languages**: the portal's menus and buttons in Asante Twi and Ewe (drafts; English stays the default).
 - **Share data**: a Zotero-style form for sharing datasets, with DOI look-up, any file format and review by the team.

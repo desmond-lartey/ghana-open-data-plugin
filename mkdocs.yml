@@ -104,6 +104,7 @@ nav:
       - using/index.md
       - Finding data: using/finding-data.md
       - Statistics: using/statistics.md
+      - Map explorer: using/map-explorer.md
       - Regions and districts: using/regions.md
       - Data Lab (SQL): using/data-lab.md
       - Desmond, the guide: using/desmond.md
