@@ -3,7 +3,7 @@
 <h1 align="center">Ghana Open Data</h1>
 
 <p align="center"><strong>Open data, statistics and maps for Ghana.</strong><br>
-Find it, map it, analyse it and cite it.</p>
+Find it, map and analyse</p>
 
 <p align="center">
   <a href="https://ghana-open-data.vercel.app">Portal</a> ·

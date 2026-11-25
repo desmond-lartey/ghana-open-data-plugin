@@ -71,7 +71,7 @@ Ghana Open Data is a free portal for students, researchers, journalists, public 
 
 ## Open by default
 
-Browsing the portal never needs an account. Downloads and the analysis tools need a free account, as on Copernicus or NASA Earthdata: it takes a minute, and it tells us who uses Ghana's data. Every dataset keeps its original licence and credit line.
+Browsing the portal never needs an account. Downloads and the analysis tools need a free account. It takes a minute, and it tells us who uses Ghana's data. Every dataset keeps its original licence and credit line.
 
 !!! note "An independent project"
     Ghana Open Data is an independent open data project. It is not run by the Government of Ghana or the Ghana Statistical Service, which is the authority for official statistics.
