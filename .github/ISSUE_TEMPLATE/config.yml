@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Share a dataset
-    url: https://ghana-open-data.vercel.app/contribute
+    url: https://www.ghanaopendata.com/contribute
     about: Datasets are shared on the portal, where they are reviewed with their files.
   - name: Ask Desmond
-    url: https://ghana-open-data.vercel.app
+    url: https://www.ghanaopendata.com
     about: For quick questions about the portal, click "Ask Desmond" on any page.

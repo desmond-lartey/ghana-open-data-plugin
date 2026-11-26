@@ -8,7 +8,7 @@ comments: false
 
 Ghana Open Data is a free portal for students, researchers, journalists, public servants and citizens. Browse national and regional statistics, map Ghana's regions and districts in a GIS workspace that runs in your browser, draw satellite layers with Earth Engine, query data with SQL, and share datasets of your own with the community.
 
-[Open the portal](https://ghana-open-data.vercel.app){ .md-button .md-button--primary }
+[Open the portal](https://www.ghanaopendata.com){ .md-button .md-button--primary }
 [Get started](getting-started.md){ .md-button }
 [GIS workspace](gis/index.md){ .md-button }
 [Share your data](share/index.md){ .md-button }

@@ -2,7 +2,7 @@
 
 The Map explorer shows one indicator at a time across Ghana's **260 districts** or **16 regions**, the way statistical offices present their data: as a coloured map, a sortable table or a ranking.
 
-[Open the Map explorer](https://ghana-open-data.vercel.app/explorer.html){ .md-button .md-button--primary }
+[Open the Map explorer](https://www.ghanaopendata.com/explorer.html){ .md-button .md-button--primary }
 
 ## Choosing what to see
 

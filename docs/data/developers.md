@@ -5,16 +5,16 @@ Everything on the portal has a stable web address. The portal's **Developers** p
 ## Files
 
 ```text
-https://ghana-open-data.vercel.app/data/reference/gha_admin0.geojson     national border
-https://ghana-open-data.vercel.app/data/reference/gha_admin1.geojson     16 regions
-https://ghana-open-data.vercel.app/data/reference/gha_admin2.geojson     260 districts
-https://ghana-open-data.vercel.app/data/reference/gha_admincapitals.geojson
+https://www.ghanaopendata.com/data/reference/gha_admin0.geojson     national border
+https://www.ghanaopendata.com/data/reference/gha_admin1.geojson     16 regions
+https://www.ghanaopendata.com/data/reference/gha_admin2.geojson     260 districts
+https://www.ghanaopendata.com/data/reference/gha_admincapitals.geojson
 ```
 
 ## National indicators
 
 ```text
-GET https://ghana-open-data.vercel.app/api/series?code=NY.GDP.MKTP.KD.ZG&countries=GHA,NGA
+GET https://www.ghanaopendata.com/api/series?code=NY.GDP.MKTP.KD.ZG&countries=GHA,NGA
 ```
 
 Each point is `[year, value]`, with `"imf"` as a third element where the figure comes from the IMF.
@@ -24,8 +24,8 @@ Each point is `[year, value]`, with `"imf"` as a third element where the figure 
     ```python
     import geopandas as gpd, requests
 
-    districts = gpd.read_file("https://ghana-open-data.vercel.app/data/reference/gha_admin2.geojson")
-    series = requests.get("https://ghana-open-data.vercel.app/api/series",
+    districts = gpd.read_file("https://www.ghanaopendata.com/data/reference/gha_admin2.geojson")
+    series = requests.get("https://www.ghanaopendata.com/api/series",
                           params={"code": "SP.POP.TOTL", "countries": "GHA"}).json()
     ```
 
@@ -33,15 +33,15 @@ Each point is `[year, value]`, with `"imf"` as a third element where the figure 
 
     ```r
     library(sf); library(jsonlite)
-    districts <- st_read("https://ghana-open-data.vercel.app/data/reference/gha_admin2.geojson")
-    series <- fromJSON("https://ghana-open-data.vercel.app/api/series?code=SP.POP.TOTL&countries=GHA")
+    districts <- st_read("https://www.ghanaopendata.com/data/reference/gha_admin2.geojson")
+    series <- fromJSON("https://www.ghanaopendata.com/api/series?code=SP.POP.TOTL&countries=GHA")
     ```
 
 === "DuckDB"
 
     ```sql
     INSTALL spatial; LOAD spatial;
-    SELECT adm1_name, count(*) FROM ST_Read('https://ghana-open-data.vercel.app/data/reference/gha_admin2.geojson') GROUP BY 1;
+    SELECT adm1_name, count(*) FROM ST_Read('https://www.ghanaopendata.com/data/reference/gha_admin2.geojson') GROUP BY 1;
     ```
 
 ## Linking to a map

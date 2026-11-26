@@ -12,7 +12,7 @@ Every dataset keeps the licence of its producer. Its page shows the licence and 
 
 ## Citing the portal
 
-> Ghana Open Data (2026). *Ghana Open Data portal*. https://ghana-open-data.vercel.app
+> Ghana Open Data (2026). *Ghana Open Data portal*. https://www.ghanaopendata.com
 
 Cite the original dataset as well, using the credit line on its page.
 

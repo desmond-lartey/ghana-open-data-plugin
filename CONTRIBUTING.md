@@ -4,7 +4,7 @@ Thank you for helping. There are three ways in.
 
 ## Share data
 
-Use **[Share data](https://ghana-open-data.vercel.app/contribute)** on the portal (a free account is needed). Describe the data, attach the files or link to them, and the review team checks the licence, the source and the files. Approved datasets are added to `community/datasets/` here automatically.
+Use **[Share data](https://www.ghanaopendata.com/contribute)** on the portal (a free account is needed). Describe the data, attach the files or link to them, and the review team checks the licence, the source and the files. Approved datasets are added to `community/datasets/` here automatically.
 
 Please do not open pull requests that add datasets by hand: submissions go through the portal so they can be reviewed with their files.
 

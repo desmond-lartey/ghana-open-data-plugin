@@ -6,9 +6,9 @@
 Find it, map and analyse</p>
 
 <p align="center">
-  <a href="https://ghana-open-data.vercel.app">Portal</a> ·
+  <a href="https://www.ghanaopendata.com">Portal</a> ·
   <a href="https://desmond-lartey.github.io/ghana-open-data-plugin/">Documentation</a> ·
-  <a href="https://ghana-open-data.vercel.app/contribute">Share data</a> ·
+  <a href="https://www.ghanaopendata.com/contribute">Share data</a> ·
   <a href="https://github.com/desmond-lartey/ghana-open-data-plugin/issues/new/choose">Feedback</a>
 </p>
 
@@ -32,7 +32,7 @@ This is the public home of **Ghana Open Data**: its documentation, its community
 
 ## Get involved
 
-- **Share a dataset**: use [Share data](https://ghana-open-data.vercel.app/contribute) on the portal. Approved datasets appear in [`community/datasets/`](community/datasets/) and in the [community catalogue](https://desmond-lartey.github.io/ghana-open-data-plugin/share/catalogue/).
+- **Share a dataset**: use [Share data](https://www.ghanaopendata.com/contribute) on the portal. Approved datasets appear in [`community/datasets/`](community/datasets/) and in the [community catalogue](https://desmond-lartey.github.io/ghana-open-data-plugin/share/catalogue/).
 - **Report a problem or suggest an idea**: [open an issue](https://github.com/desmond-lartey/ghana-open-data-plugin/issues/new/choose).
 - **Improve the documentation**: see [CONTRIBUTING.md](CONTRIBUTING.md).
 

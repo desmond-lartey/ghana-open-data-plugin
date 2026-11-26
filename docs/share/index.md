@@ -32,5 +32,5 @@ Published an article with data about Ghana? Run a survey, mapped a district, or 
 
 </div>
 
-[Share data on the portal](https://ghana-open-data.vercel.app/contribute){ .md-button .md-button--primary }
+[Share data on the portal](https://www.ghanaopendata.com/contribute){ .md-button .md-button--primary }
 [How to submit](how-to-submit.md){ .md-button }

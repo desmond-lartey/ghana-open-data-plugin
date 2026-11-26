@@ -4,7 +4,7 @@ This page takes about five minutes and walks through the portal's main paths.
 
 ## 1. Open the portal
 
-Go to **[ghana-open-data.vercel.app](https://ghana-open-data.vercel.app)**. The home page shows Ghana's key indicators, a map of the regions and the ways in: data, statistics, regions and tools.
+Go to **[www.ghanaopendata.com](https://www.ghanaopendata.com)**. The home page shows Ghana's key indicators, a map of the regions and the ways in: data, statistics, regions and tools.
 
 ![The home page](assets/screenshots/portal-home.png){ .gh-shot }
 

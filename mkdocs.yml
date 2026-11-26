@@ -69,7 +69,7 @@ extra:
     category_id: "DIC_kwDOVxRSSc4DL5oZ"
   social:
     - icon: material/web
-      link: https://ghana-open-data.vercel.app
+      link: https://www.ghanaopendata.com
       name: The portal
     - icon: material/account-group
       link: https://github.com/desmond-lartey/ghana-open-data-plugin

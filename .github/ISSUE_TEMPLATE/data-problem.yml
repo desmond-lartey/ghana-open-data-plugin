@@ -7,7 +7,7 @@ body:
     attributes:
       label: Which dataset or page?
       description: Paste the address of the page on the portal.
-      placeholder: https://ghana-open-data.vercel.app/dataset?id=…
+      placeholder: https://www.ghanaopendata.com/dataset?id=…
     validations:
       required: true
   - type: textarea
