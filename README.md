@@ -2,7 +2,7 @@
 
 <h1 align="center">Ghana Open Data</h1>
 
-<p align="center"><strong>Open data, statistics and maps for Ghana.</strong><br>
+<p align="center"><strong>Open datastatistics and maps.</strong><br>
 Find it, map and analyse</p>
 
 <p align="center">
