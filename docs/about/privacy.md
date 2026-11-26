@@ -2,7 +2,7 @@
 
 ## Browsing
 
-The portal sets no cookies and has no adverts or third-party trackers. To show how it is used (visitors, page views, downloads and maps opened), each page sends one anonymous count. A random number kept in your browser tells a returning visitor from a new one; no name, email or IP address is stored, and visitors are estimated in a way that keeps no list of them. If your browser asks sites not to track you, nothing is counted.
+The portal sets no cookies and has no adverts or third-party trackers. To show how it is used (visitors, page views, downloads and maps opened), each page sends one anonymous count. A random number kept in your browser tells a returning visitor from a new one; no name, email or IP address is stored, and visitors are estimated in a way that keeps no list of them. If your browser asks sites not to track you, nothing is counted. The count also records the country the visit comes from, as worked out by our hosting provider; we never see or keep the address itself, and countries with fewer than three visits are only shown as "other countries". The totals are public on [The portal in use](https://www.ghanaopendata.com/usage.html).
 
 ## Your account
 
