@@ -2,6 +2,8 @@
 
 ## November 2026
 
+- **Places on the map**: the Map explorer draws Overture's points of interest (clinics, schools, cafés, shops, hotels, places of worship, transport and more) by group: rings when zoomed out, single points with names when zoomed in, and a filter by name or type.
+- **Open in GIS workspace** now carries the explorer's map: the coloured districts or regions with every indicator as an attribute, and the places shown.
 - **Map explorer**: compare Ghana's 260 districts and 16 regions on a map, table or ranking: buildings, roads, places, land cover (from Overture Maps, refreshed monthly), constituencies and polling stations.
 - **Electoral geography**: the 276 parliamentary constituencies and 40,648 polling stations of the 2024 general elections, from the Electoral Commission's list, each linked to its district. Download them as CSV or query them in the Data Lab.
 - **Languages**: the portal's menus and buttons in Asante Twi and Ewe (drafts; English stays the default).
